@@ -1,0 +1,176 @@
+
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>Motion Reveal Slideshow | Codrops</title>
+		<meta name="description" content="A simple slideshow with a reveal transition and a fullscreen content view" />
+		<meta name="keywords" content="slideshow, reveal, effect, animation, web design, template, demo" />
+		<meta name="author" content="Codrops" />
+		<link rel="shortcut icon" href="favicon.ico">
+		<link rel="stylesheet" href="https://use.typekit.net/xaw6rjp.css">
+		<link rel="stylesheet" type="text/css" href="css/base.css" />
+        <link rel="stylesheet" type="text/css" href="pater/pater.css" />
+		<script>document.documentElement.className="js";var supportsCssVars=function(){var e,t=document.createElement("style");return t.innerHTML="root: { --tmp-var: bold; }",document.head.appendChild(t),e=!!(window.CSS&&window.CSS.supports&&window.CSS.supports("font-weight","var(--tmp-var)")),t.parentNode.removeChild(t),e};supportsCssVars()||alert("Please view this demo in a modern browser that supports CSS Variables.");</script>
+		<script src="//tympanus.net/codrops/adpacks/analytics.js"></script>
+	</head>
+	<body class="loading">
+		<svg class="hidden">
+			<symbol id="icon-arrow" viewBox="0 0 24 24">
+				<title>arrow</title>
+				<polygon points="6.3,12.8 20.9,12.8 20.9,11.2 6.3,11.2 10.2,7.2 9,6 3.1,12 9,18 10.2,16.8 "/>
+			</symbol>
+			<symbol id="icon-drop" viewBox="0 0 24 24">
+				<title>drop</title>
+				<path d="M12,21c-3.6,0-6.6-3-6.6-6.6C5.4,11,10.8,4,11.4,3.2C11.6,3.1,11.8,3,12,3s0.4,0.1,0.6,0.3c0.6,0.8,6.1,7.8,6.1,11.2C18.6,18.1,15.6,21,12,21zM12,4.8c-1.8,2.4-5.2,7.4-5.2,9.6c0,2.9,2.3,5.2,5.2,5.2s5.2-2.3,5.2-5.2C17.2,12.2,13.8,7.3,12,4.8z"/><path d="M12,18.2c-0.4,0-0.7-0.3-0.7-0.7s0.3-0.7,0.7-0.7c1.3,0,2.4-1.1,2.4-2.4c0-0.4,0.3-0.7,0.7-0.7c0.4,0,0.7,0.3,0.7,0.7C15.8,16.5,14.1,18.2,12,18.2z"/>
+			</symbol>
+			<svg id="icon-github" viewBox="0 0 33 33">
+				<title>github</title>
+				<path d="M16.608.455C7.614.455.32 7.748.32 16.745c0 7.197 4.667 13.302 11.14 15.456.815.15 1.112-.353 1.112-.785 0-.386-.014-1.411-.022-2.77-4.531.984-5.487-2.184-5.487-2.184-.741-1.882-1.809-2.383-1.809-2.383-1.479-1.01.112-.99.112-.99 1.635.115 2.495 1.679 2.495 1.679 1.453 2.489 3.813 1.77 4.741 1.353.148-1.052.569-1.77 1.034-2.177-3.617-.411-7.42-1.809-7.42-8.051 0-1.778.635-3.233 1.677-4.371-.168-.412-.727-2.069.16-4.311 0 0 1.367-.438 4.479 1.67a15.602 15.602 0 0 1 4.078-.549 15.62 15.62 0 0 1 4.078.549c3.11-2.108 4.475-1.67 4.475-1.67.889 2.242.33 3.899.163 4.311C26.37 12.66 27 14.115 27 15.893c0 6.258-3.809 7.635-7.437 8.038.584.503 1.105 1.497 1.105 3.017 0 2.177-.02 3.934-.02 4.468 0 .436.294.943 1.12.784 6.468-2.159 11.131-8.26 11.131-15.455 0-8.997-7.294-16.29-16.291-16.29"></path>
+			</svg>
+			<symbol id="icon-caret" viewBox="0 0 24 13">
+				<title>caret</title>
+				<path d="M23.646.328a.842.842 0 0 0-1.19 0l-10.459 10.48L1.517.328a.842.842 0 0 0-1.189 1.19L11.382 12.57c.164.164.369.246.595.246.205 0 .43-.082.594-.246L23.625 1.518a.824.824 0 0 0 .02-1.19z"/>
+			</symbol>
+		</svg>
+		<main>
+			<div class="content content--fixed">
+				<header class="codrops-header">
+					<div class="codrops-links">
+						<a class="codrops-icon codrops-icon--prev" href="https://tympanus.net/Development/RevealSlideshow/" title="Previous Demo"><svg class="icon icon--arrow"><use xlink:href="#icon-arrow"></use></svg></a>
+						<a class="codrops-icon codrops-icon--drop" href="https://tympanus.net/codrops/?p=35450" title="Back to the article"><svg class="icon icon--drop"><use xlink:href="#icon-drop"></use></svg></a>
+					</div>
+					<h1 class="codrops-header__title">Motion Reveal Slideshow</h1>
+				</header>
+				<p class="info">Inspired by <a href="https://www.instagram.com/p/Bjr-3Gbj_ZE/?taken-by=louis_ansa">"Paradis - Reprise"</a> by Louis Ansa</p>
+				<a class="github" href="https://github.com/codrops/MotionRevealSlideshow/" title="Find this project on GitHub"><svg class="icon icon--github"><use xlink:href="#icon-github"></use></svg></a>
+			</div>
+			<div class="slideshow">
+				<div class="slide">
+					<div class="preview">
+						<div class="preview__img-wrap">
+							<div class="preview__img" style="background-image: url(img/project1.jpg);"></div>
+							<div class="preview__img-reveal"></div>
+						</div>
+						<h3 class="preview__title">Carmino Burano</h3>
+						<div class="preview__content">
+							<p>You’re not your job. You’re not how much money you have in the bank. You’re not the car you drive. You’re not the contents of your wallet. You’re not your f***ing khakis. You’re the all-singing, all-dancing crap of the world. What do you want? Wanna go back to the s*** job, f***in’ condo world, watching sitcoms? F*** you, I won’t do it. Fifth rule: one fight at a time, fellas.</p>
+						</div>
+					</div>
+					<div class="slide__img-wrap">
+						<div class="slide__img" style="background-image: url(img/1.jpg);"></div>
+						<div class="slide__img-reveal"></div>
+					</div>
+					<span class="slide__number">#01</span>
+					<h3 class="slide__title">Carmino</h3>
+				</div>
+				<div class="slide">
+					<div class="preview">
+						<div class="preview__img-wrap">
+							<div class="preview__img" style="background-image: url(img/project2.jpg);"></div>
+							<div class="preview__img-reveal"></div>
+						</div>
+						<h3 class="preview__title">Jackardi Jack</h3>
+						<div class="preview__content">
+							<p>You’re not your job. You’re not how much money you have in the bank. You’re not the car you drive. You’re not the contents of your wallet. You’re not your f***ing khakis. You’re the all-singing, all-dancing crap of the world. What do you want? Wanna go back to the s*** job, f***in’ condo world, watching sitcoms? F*** you, I won’t do it. Fifth rule: one fight at a time, fellas.</p>
+						</div>
+					</div>
+					<div class="slide__img-wrap">
+						<div class="slide__img" style="background-image: url(img/2.jpg);"></div>
+						<div class="slide__img-reveal"></div>
+					</div>
+					<span class="slide__number">#02</span>
+					<h3 class="slide__title">Jackardi</h3>
+				</div>
+				<div class="slide">
+					<div class="preview">
+						<div class="preview__img-wrap">
+							<div class="preview__img" style="background-image: url(img/project3.jpg);"></div>
+							<div class="preview__img-reveal"></div>
+						</div>
+						<h3 class="preview__title">Hostabili Hell</h3>
+						<div class="preview__content">
+							<p>You’re not your job. You’re not how much money you have in the bank. You’re not the car you drive. You’re not the contents of your wallet. You’re not your f***ing khakis. You’re the all-singing, all-dancing crap of the world. What do you want? Wanna go back to the s*** job, f***in’ condo world, watching sitcoms? F*** you, I won’t do it. Fifth rule: one fight at a time, fellas.</p>
+						</div>
+					</div>
+					<div class="slide__img-wrap">
+						<div class="slide__img" style="background-image: url(img/3.jpg);"></div>
+						<div class="slide__img-reveal"></div>
+					</div>
+					<span class="slide__number">#03</span>
+					<h3 class="slide__title">Hostabili</h3>
+				</div>
+				<div class="slide">
+					<div class="preview">
+						<div class="preview__img-wrap">
+							<div class="preview__img" style="background-image: url(img/project4.jpg);"></div>
+							<div class="preview__img-reveal"></div>
+						</div>
+						<h3 class="preview__title">Tellawa Tell</h3>
+						<div class="preview__content">
+							<p>You’re not your job. You’re not how much money you have in the bank. You’re not the car you drive. You’re not the contents of your wallet. You’re not your f***ing khakis. You’re the all-singing, all-dancing crap of the world. What do you want? Wanna go back to the s*** job, f***in’ condo world, watching sitcoms? F*** you, I won’t do it. Fifth rule: one fight at a time, fellas.</p>
+						</div>
+					</div>
+					<div class="slide__img-wrap">
+						<div class="slide__img" style="background-image: url(img/4.jpg);"></div>
+						<div class="slide__img-reveal"></div>
+					</div>
+					<span class="slide__number">#04</span>
+					<h3 class="slide__title">Tellawa</h3>
+				</div>
+				<div class="slide">
+					<div class="preview">
+						<div class="preview__img-wrap">
+							<div class="preview__img" style="background-image: url(img/project5.jpg);"></div>
+							<div class="preview__img-reveal"></div>
+						</div>
+						<h3 class="preview__title">Lochnox Lox</h3>
+						<div class="preview__content">
+							<p>You’re not your job. You’re not how much money you have in the bank. You’re not the car you drive. You’re not the contents of your wallet. You’re not your f***ing khakis. You’re the all-singing, all-dancing crap of the world. What do you want? Wanna go back to the s*** job, f***in’ condo world, watching sitcoms? F*** you, I won’t do it. Fifth rule: one fight at a time, fellas.</p>
+						</div>
+					</div>
+					<div class="slide__img-wrap">
+						<div class="slide__img" style="background-image: url(img/5.jpg);"></div>
+						<div class="slide__img-reveal"></div>
+					</div>
+					<span class="slide__number">#05</span>
+					<h3 class="slide__title">Lochnox</h3>
+				</div>
+				<nav class="slidenav">
+					<button class="slidenav__item slidenav__item--prev">Previous</button>
+					<button class="slidenav__item slidenav__item--next">Next</button>
+					<button class="slidenav__preview">
+						<svg class="icon icon--caret">
+							<use xlink:href="#icon-caret"></use>
+						</svg>
+					</button>
+				</nav>
+			</div>
+			<a class="pater" target="_blank" href="https://goo.gl/fEBS8f" rel="nofollow" onClick="recordOutboundLink(this, 'Outbound Links', 'Monday23072018');return false;">
+				<img class="pater__pixel" src="https://ad.doubleclick.net/ddm/trackimp/N728909.1044586DAVIDWALSH.NAME/B21046303.223578635;dc_trk_aid=423515032;dc_trk_cid=103892783;ord=[timestamp];dc_lat=;dc_rdid=;tag_for_child_directed_treatment=;tfua=?" border="0" height="1" width="1" alt="Advertisement">
+				<svg width="100%" height="100%" preserveAspectRatio="xMidYMax meet" xmlns="http://www.w3.org/2000/svg">
+					<path style="pointer-events: auto;" d="M35.2 250h350.72L300.79 89.89a158.196 158.196 0 0 0-3.368-6.712C257.177 7.49 163.346-21.322 87.842 18.823 12.367 58.954-16.223 152.801 23.956 228.475l-.158.083L35.2 250z" fill="#595AD4" fill-rule="nonzero"/>
+					<g transform="translate(105 37)" fill-rule="nonzero">
+						<path d="M2.073 14.53a2.067 2.067 0 0 1-1.814-1.1 2.18 2.18 0 0 1 .057-2.162l3.736-6.123a2.064 2.064 0 0 1 1.843-1.046A2.07 2.07 0 0 1 7.68 5.247a2.18 2.18 0 0 1-.112 2.16L3.835 13.53c-.38.623-1.046 1-1.762 1z" fill="#FF3D57"/>
+						<path d="M8.545 14.157c-.753 0-1.447-.42-1.811-1.097a2.173 2.173 0 0 1 .057-2.157l3.728-6.108a2.062 2.062 0 0 1 1.846-1.069c.76.018 1.448.461 1.795 1.155a2.173 2.173 0 0 1-.133 2.17l-3.728 6.108a2.06 2.06 0 0 1-1.754.998z" fill="#FC0"/>
+						<ellipse fill="#00D647" cx="14.568" cy="12.108" rx="1.978" ry="2.049"/>
+						<path d="M98.283 11.252c.58 0 .928.431.928 1.138v2.42H100v-2.476c0-1.2-.542-1.898-1.561-1.898-.4 0-1.032.115-1.41.88a1.3 1.3 0 0 0-1.058-.834 1.745 1.745 0 0 0-.442-.027c-.326.027-.902.238-1.12.715v-.642h-.789v4.282h.79V12.5c0-.9.564-1.248 1.127-1.248.53 0 .876.422.876 1.128v2.43h.785V12.5c0-.716.411-1.257 1.085-1.248zm-7.562 2.843c.361.008.71-.143.962-.415a1.43 1.43 0 0 0 .374-1.025c0-.862-.607-1.403-1.336-1.403-.728 0-1.336.541-1.336 1.403-.014.38.12.75.373 1.023.251.272.598.423.958.417h.005zm0 .802c-1.153 0-2.116-.89-2.116-2.246 0-1.357.963-2.22 2.116-2.22 1.154 0 2.125.863 2.125 2.22 0 1.357-.977 2.251-2.13 2.251l.005-.005zm-6.18-2.246l-.009.004c0-1.357.99-2.219 2.151-2.223a2.043 2.043 0 0 1 1.562.688l-.599.531a1.319 1.319 0 0 0-.963-.403c-.728 0-1.361.54-1.361 1.403 0 .582.332 1.107.84 1.33.51.222 1.095.1 1.484-.312l.607.531a2.057 2.057 0 0 1-1.57.697c-1.153 0-2.142-.89-2.142-2.246zm-2.527 1.337c0-.318.242-.576.54-.576.298 0 .54.258.54.576-.018.304-.254.541-.54.541-.286 0-.522-.237-.54-.541zM84.173 5.086h-2.81l-1.97 5.3-1.96-5.3h-2.81l3.418 8.377L75.915 19h2.79l5.468-13.914zm-17.09 4.658c0 1.339 1.12 2.22 2.221 2.22 1.082 0 2.145-.82 2.145-2.22 0-1.4-1.063-2.221-2.145-2.221-1.1 0-2.221.882-2.221 2.22zm4.366 4.677v-1.059c-.57.9-1.899 1.24-2.581 1.24-2.259 0-4.518-1.859-4.518-4.858 0-3 2.258-4.859 4.518-4.859.569 0 1.898.2 2.58 1.24V5.088h2.62v9.335l-2.62-.002zm-7.844 0h-2.62v-1.159c-.437.86-1.499 1.36-2.6 1.36-2.279 0-4.29-1.9-4.29-4.84 0-2.997 2.011-4.898 4.29-4.898 1.1 0 2.164.48 2.6 1.34V0h2.62v14.421zm-2.677-4.698c0-1.399-.968-2.22-2.05-2.22-1.12 0-2.05.88-2.05 2.22 0 1.383.93 2.259 2.05 2.259 1.102 0 2.05-.919 2.05-2.259zm-13.31-.24c0-1.42.702-1.9 1.632-1.9.892 0 1.538.62 1.538 1.859v4.978h2.638V8.843c0-2.66-1.253-3.959-3.247-3.959-1.043 0-2.087.62-2.562 1.56V5.085H44.98v9.334h2.638V9.482zm-7.996 5.097c-2.506 0-4.596-1.918-4.596-4.858 0-2.94 2.088-4.84 4.596-4.84s4.613 1.899 4.613 4.84c0 2.94-2.108 4.86-4.613 4.86v-.002zm0-2.718c1.1 0 2.012-.84 2.012-2.139 0-1.26-.911-2.12-2.012-2.12a1.912 1.912 0 0 0-1.426.612c-.377.4-.582.945-.568 1.508.001 1.3.912 2.14 1.994 2.14v-.001zm-9.325-4.278c.778 0 1.462.64 1.462 1.859v4.978h2.62v-5.3c0-2.82-1.313-4.24-3.417-4.24-.626 0-1.804.2-2.658 1.66-.494-1.08-1.442-1.64-2.845-1.64-.991-.007-1.895.594-2.315 1.54V5.086h-2.64v9.334h2.638V9.482c0-1.42.74-1.9 1.537-1.9.76 0 1.442.62 1.462 1.8v5.038h2.638V9.482c0-1.357.684-1.898 1.518-1.898z" fill="#FFF"/>
+					</g>
+					<circle style="pointer-events: auto;" class="pater__arrow-circle" fill="#FFCD03" cx="24" cy="212" r="24"/>
+					<path class="pater__arrow" d="M33.5 213.498H19.118l1.941 1.941a1.498 1.498 0 0 1 0 2.121 1.498 1.498 0 0 1-2.121 0l-4.502-4.5a1.506 1.506 0 0 1 0-2.122l4.502-4.502a1.498 1.498 0 0 1 2.121 0 1.498 1.498 0 0 1 0 2.121l-1.941 1.941H33.5a1.5 1.5 0 0 1 0 3z" fill="#FF3D57" />
+					<text fill="#212168" font-family="ArialMT, Arial" font-size="14">
+						<tspan x="273" y="233">Sponsored by</tspan>
+					</text>
+				</svg>
+				<img class="pater__img" src="pater/monday_1.png" alt="Mac Monday"/>
+				<span class="pater__text-hover">Try for free</span>
+				<h3 class="pater__title">Visual Project management tool for designers</h3>
+			</a>
+		</main>
+		<script src="js/imagesloaded.pkgd.min.js"></script>
+		<script src="js/TweenMax.min.js"></script>
+		<script src="js/demo.js"></script>
+	</body>
+</html>
+
